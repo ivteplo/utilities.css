@@ -1,0 +1,57 @@
+// Copyright (c) 2022 Ivan Teplov
+
+@function _flex-alignment-value($alignment) {
+  @if $alignment == "start" or $alignment == "end" {
+    @return flex-#{$alignment};
+  }
+
+  @return $alignment;
+}
+
+@mixin flex-direction($direction) {
+  display: flex;
+  flex-direction: $direction;
+
+  &.reversed-order {
+    flex-direction: #{$direction}-reverse;
+  }
+}
+
+@mixin flex-alignments {
+  @each $alignment in ("start", "center", "end", "stretch") {
+    $value: #{_flex-alignment-value($alignment)};
+
+    &.items-#{$alignment} {
+      align-items: $value;
+    }
+
+    &.justify-#{$alignment} {
+      justify-content: $value;
+    }
+
+    &.content-#{$alignment} {
+      align-content: $value;
+    }
+  }
+}
+
+@mixin flex-children {
+  .fill {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+
+.row {
+  @include flex-direction(row);
+}
+
+.column {
+  @include flex-direction(column);
+}
+
+.row,
+.column {
+  @include flex-alignments();
+  @include flex-children();
+}
