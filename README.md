@@ -1,6 +1,6 @@
 # css-utils
 
-CSS library with utility-classes
+CSS library with utility classes
 
 ## Development
 
