@@ -35,6 +35,20 @@
   }
 }
 
+@mixin flex-wrap {
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .reversed-wrap {
+    flex-wrap: wrap-reverse;
+  }
+
+  .no-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
 @mixin flex-children {
   .fill {
     flex-grow: 1;
@@ -53,5 +67,6 @@
 .row,
 .column {
   @include flex-alignments();
+  @include flex-wrap();
   @include flex-children();
 }
