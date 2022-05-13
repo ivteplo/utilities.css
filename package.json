@@ -1,0 +1,39 @@
+{
+  "name": "css-utils",
+  "version": "1.0.0",
+  "description": "CSS library with utility-classes",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "format": "prettier -w sources/**/* Gulpfile.js README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivteplo/css-utils.git"
+  },
+  "keywords": [
+    "css",
+    "utils",
+    "utilities",
+    "sass",
+    "styles",
+    "library",
+    "style-library",
+    "css-library",
+    "utility-library"
+  ],
+  "author": "Ivan Teplov <iteplov7@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ivteplo/css-utils/issues"
+  },
+  "homepage": "https://github.com/ivteplo/css-utils#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.51.0"
+  }
+}
