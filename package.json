@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivteplo/css-utils.git"
+    "url": "git+https://github.com/ivteplo/utilities.css.git"
   },
   "keywords": [
     "css",
@@ -31,12 +31,14 @@
   "author": "Ivan Teplov <iteplov7@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ivteplo/css-utils/issues"
+    "url": "https://github.com/ivteplo/utilities.css/issues"
   },
-  "homepage": "https://github.com/ivteplo/css-utils#readme",
+  "homepage": "https://github.com/ivteplo/utilities.css#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "prettier": "^2.6.2",
     "sass": "^1.51.0"
