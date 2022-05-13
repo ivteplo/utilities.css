@@ -1,8 +1,13 @@
 {
-  "name": "css-utils",
+  "name": "utilities.css",
   "version": "1.0.0",
-  "description": "CSS library with utility-classes",
-  "main": "index.js",
+  "description": "CSS library with utility classes",
+  "style": "build/main.css",
+  "files": [
+    "build/**/*",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",
