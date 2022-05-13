@@ -18,7 +18,7 @@
 }
 
 @mixin flex-alignments {
-  @each $alignment in ("start", "center", "end", "stretch") {
+  @each $alignment in ("start", "center", "end", "stretch", "baseline") {
     $value: #{_flex-alignment-value($alignment)};
 
     &.items-#{$alignment} {
@@ -49,13 +49,6 @@
   }
 }
 
-@mixin flex-children {
-  .fill {
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-}
-
 .row {
   @include flex-direction(row);
 }
@@ -69,4 +62,9 @@
   @include flex-alignments();
   @include flex-wrap();
   @include flex-children();
+}
+
+.fill {
+  flex-grow: 1;
+  flex-shrink: 0;
 }
