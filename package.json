@@ -1,5 +1,5 @@
 {
-  "name": "utilities.css",
+  "name": "@ivteplo/utilities.css",
   "version": "1.0.0",
   "description": "CSS library with utility classes",
   "style": "build/main.css",
