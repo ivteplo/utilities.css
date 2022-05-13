@@ -61,7 +61,6 @@
 .column {
   @include flex-alignments();
   @include flex-wrap();
-  @include flex-children();
 }
 
 .fill {
