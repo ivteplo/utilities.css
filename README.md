@@ -1,6 +1,40 @@
-# css-utils
+# utilities.css
 
 CSS library with utility classes
+
+## Installation
+
+```bash
+npm install @ivteplo/utilities.css
+# or, if you prefer yarn:
+yarn add @ivteplo/utilities.css
+```
+
+## Usage
+
+### Via CDN
+
+Add this piece of code into the `<head>` tag in your HTML file:
+```html
+<link rel="stylesheet" href="https://unpkg.com/@ivteplo/utilities.css/build/main.css">
+```
+
+Or, if you want to use the minified version:
+```html
+<link rel="stylesheet" href="https://unpkg.com/@ivteplo/utilities.css/build/main.min.css">
+```
+
+### Import into JavaScript
+
+This requires a bundler that supports importing CSS:
+```javascript
+import "@ivteplo/utilities.css/build/main.css"
+```
+
+Or minified version:
+```javascript
+import "@ivteplo/utilities.css/build/main.min.css"
+```
 
 ## Classes
 
