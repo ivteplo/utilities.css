@@ -24,7 +24,7 @@ Or, if you want to use the minified version:
 <link rel="stylesheet" href="https://unpkg.com/@ivteplo/utilities.css/build/main.min.css">
 ```
 
-### Import into JavaScript
+### Import from JavaScript
 
 This requires a bundler that supports importing CSS:
 ```javascript
@@ -34,6 +34,18 @@ import "@ivteplo/utilities.css/build/main.css"
 Or minified version:
 ```javascript
 import "@ivteplo/utilities.css/build/main.min.css"
+```
+
+### Import from CSS
+
+Using bundler:
+```css
+@import "@ivteplo/utilities.css";
+```
+
+Using CDN:
+```css
+@import "https://unpkg.com/@ivteplo/utilities.css/build/main.min.css";
 ```
 
 ## Classes
@@ -72,6 +84,14 @@ import "@ivteplo/utilities.css/build/main.min.css"
   - `.font-black` (900)
 - Font families
   - `.font-system` - default system font
+
+### Text
+
+- Text alignment
+  - `.text-left`
+  - `.text-center`
+  - `.text-right`
+  - `.text-justify`
 
 ### Miscellaneous
 
