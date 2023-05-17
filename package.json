@@ -2,16 +2,19 @@
   "name": "@ivteplo/utilities.css",
   "version": "1.1.0",
   "description": "CSS library with utility classes",
+  "sass": "sources/main.scss",
   "style": "build/main.css",
+  "minifiedStyle": "build/main.min.css",
   "files": [
     "build/**/*",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
-    "build": "gulp build",
-    "watch": "gulp watch",
-    "format": "prettier -w sources/**/* Gulpfile.js README.md"
+    "build:expanded": "node scripts/build.js expanded",
+    "build:compressed": "node scripts/build.js compressed",
+    "build": "concurrently npm:build:*",
+    "format": "prettier -w sources/**/* README.md"
   },
   "repository": {
     "type": "git",
@@ -35,12 +38,8 @@
   },
   "homepage": "https://github.com/ivteplo/utilities.css#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-cli": "^2.3.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
-    "prettier": "^2.6.2",
-    "sass": "^1.51.0"
+    "concurrently": "^8.0.1",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1"
   }
 }
