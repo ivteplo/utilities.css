@@ -1,3 +1,5 @@
+// Copyright (c) 2022-2023 Ivan Teplov
+
 const { task, src, dest, series, ...gulp } = require("gulp")
 
 const sass = require("sass")
