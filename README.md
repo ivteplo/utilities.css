@@ -113,13 +113,13 @@ Mouse cursor:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/ivteplo/css-utils
+git clone https://github.com/ivteplo/utilities.css
 ```
 
 2. Navigate to the folder
 
 ```bash
-cd css-utils
+cd utilities.css
 ```
 
 3. Install dependencies
