@@ -1,25 +1,45 @@
-// Copyright (c) 2022-2023 Ivan Teplov
+// Copyright (c) 2022-2024 Ivan Teplov
 
 .font-system {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
+		Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol";
+}
+
+$default-fonts: ("monospace", "sans-serif", "serif");
+
+@each $family in $default-fonts {
+	.font-#{$family} {
+		font-family: $family;
+	}
 }
 
 $font-weights: (
-  "thin": 100,
-  "extra-light": 200,
-  "light": 300,
-  "regular": 400,
-  "medium": 500,
-  "semibold": 600,
-  "bold": 700,
-  "extra-bold": 800,
-  "black": 900,
+	"thin": 100,
+	"extra-light": 200,
+	"light": 300,
+	"regular": 400,
+	"medium": 500,
+	"semibold": 600,
+	"bold": 700,
+	"extra-bold": 800,
+	"black": 900,
 );
 
-@each $name, $value in $font-weights {
-  .font-#{$name} {
-    font-weight: $value;
-  }
+@each $weight, $value in $font-weights {
+	.font-#{$weight} {
+		font-weight: $value;
+	}
+}
+
+$font-styles: (
+	"normal": "normal",
+	"italic": "italic",
+	"oblique": "oblique",
+);
+
+@each $style, $value in $font-styles {
+	.font-#{$style} {
+		font-style: $value;
+	}
 }

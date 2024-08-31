@@ -1,13 +1,13 @@
-// Copyright (c) 2022-2023 Ivan Teplov
+// Copyright (c) 2022-2024 Ivan Teplov
 
 .cursor-pointer {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .not-selectable {
-  user-select: none;
+	user-select: none;
 }
 
 .selectable {
-  user-select: auto;
+	user-select: auto;
 }

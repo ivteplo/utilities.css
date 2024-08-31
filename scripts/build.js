@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 Ivan Teplov
+// Copyright (c) 2022-2024 Ivan Teplov
 
 const fs = require("node:fs/promises")
 const path = require("node:path")
