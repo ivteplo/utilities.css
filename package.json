@@ -1,6 +1,6 @@
 {
   "name": "@ivteplo/utilities.css",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "CSS library with utility classes",
   "sass": "sources/main.scss",
   "style": "build/main.css",

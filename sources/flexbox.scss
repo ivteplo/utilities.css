@@ -1,69 +1,69 @@
-// Copyright (c) 2022-2023 Ivan Teplov
+// Copyright (c) 2022-2024 Ivan Teplov
 
 @function _flex-alignment-value($alignment) {
-  @if $alignment == "start" or $alignment == "end" {
-    @return flex-#{$alignment};
-  }
+	@if $alignment == "start" or $alignment == "end" {
+		@return flex-#{$alignment};
+	}
 
-  @return $alignment;
+	@return $alignment;
 }
 
 @mixin flex-direction($direction) {
-  display: flex;
-  flex-direction: $direction;
+	display: flex;
+	flex-direction: $direction;
 
-  &.reversed-order {
-    flex-direction: #{$direction}-reverse;
-  }
+	&.reversed-order {
+		flex-direction: #{$direction}-reverse;
+	}
 }
 
 @mixin flex-alignments {
-  @each $alignment in ("start", "center", "end", "stretch", "baseline") {
-    $value: #{_flex-alignment-value($alignment)};
+	@each $alignment in ("start", "center", "end", "stretch", "baseline") {
+		$value: #{_flex-alignment-value($alignment)};
 
-    &.items-#{$alignment} {
-      align-items: $value;
-    }
+		&.items-#{$alignment} {
+			align-items: $value;
+		}
 
-    &.justify-#{$alignment} {
-      justify-content: $value;
-    }
+		&.justify-#{$alignment} {
+			justify-content: $value;
+		}
 
-    &.content-#{$alignment} {
-      align-content: $value;
-    }
-  }
+		&.content-#{$alignment} {
+			align-content: $value;
+		}
+	}
 }
 
 @mixin flex-wrap {
-  .wrap {
-    flex-wrap: wrap;
-  }
+	.wrap {
+		flex-wrap: wrap;
+	}
 
-  .reversed-wrap {
-    flex-wrap: wrap-reverse;
-  }
+	.reversed-wrap {
+		flex-wrap: wrap-reverse;
+	}
 
-  .no-wrap {
-    flex-wrap: nowrap;
-  }
+	.no-wrap {
+		flex-wrap: nowrap;
+	}
 }
 
 .row {
-  @include flex-direction(row);
+	@include flex-direction(row);
 }
 
 .column {
-  @include flex-direction(column);
+	@include flex-direction(column);
 }
 
 .row,
 .column {
-  @include flex-alignments();
-  @include flex-wrap();
+	@include flex-alignments();
+	@include flex-wrap();
 }
 
 .fill {
-  flex-grow: 1;
-  flex-shrink: 0;
+	flex-grow: 1;
+	flex-shrink: 0;
 }

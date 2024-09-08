@@ -1,9 +1,9 @@
-// Copyright (c) 2022-2023 Ivan Teplov
+// Copyright (c) 2022-2024 Ivan Teplov
 
 .text {
-  @each $alignment in ("left", "center", "right", "justify") {
-    &-#{$alignment} {
-      text-align: #{$alignment};
-    }
-  }
+	@each $alignment in ("left", "center", "right", "justify") {
+		&-#{$alignment} {
+			text-align: #{$alignment};
+		}
+	}
 }
